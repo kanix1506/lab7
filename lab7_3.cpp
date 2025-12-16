@@ -2,7 +2,15 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	if(int (x)-1 >= 65 && int (x)-1 <= 90){
+	    return x-1;
+    }
+    if(int (x)-1 == 64){
+        return 'Z';
+    }
+    else{ 
+        return '0';  
+    }
 }
 
 int main(){
